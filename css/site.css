@@ -1,0 +1,102 @@
+:root
+{
+    --cf-yellow-color:#D8C83B;
+    --cf-dark-color:#403D39;
+    --cf-blue-color:#82458E;
+
+}
+@keyframes bounce {
+	0%, 100%, 20%, 50%, 80% {
+		-webkit-transform: translateY(0);
+		-ms-transform:     translateY(0);
+		transform:         translateY(0)
+	}
+	40% {
+		-webkit-transform: translateY(-30px);
+		-ms-transform:     translateY(-30px);
+		transform:         translateY(-30px)
+	}
+	60% {
+		-webkit-transform: translateY(-15px);
+		-ms-transform:     translateY(-15px);
+		transform:         translateY(-15px)
+	}
+}
+body{
+    background: #fff;
+}
+
+.bg-warning{
+    background-color: var(--cf-yellow-color) !important;
+}
+.bg-dark{
+    background-color: var(--cf-dark-color) !important;
+}
+.bg-info{
+    background-color: var(--cf-blue-color) !important;
+}
+.text-primary{
+    color: var(--cf-blue-color) !important;
+}
+.btn-primary{
+    background-color: var(--cf-blue-color);
+    border: var(--cf-blue-color);
+}
+#small, #tablet{
+    display: none !important;
+}
+#name:active{
+    cursor: pointer;
+    animation-name: bounce;
+  -moz-animation-name: bounce;
+}
+@media only screen and (min-width: 500px) and (max-width: 1300px)  {
+    #normal{
+        display: none !important;
+    }
+    #tablet{
+        display: block !important;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #contact{
+        display: none !important;
+    }
+    #logo{
+        width: 24px !important;
+    }
+    .px-5{
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+    .pe-5{
+        padding-right: 0 !important;
+    }
+    #hero #hero-text{
+        display: none !important;
+    }
+    #hero li{
+        margin-left: 1rem !important;
+    }
+    #big{
+        display: none !important;
+    }
+    #small{
+        display: block !important;
+    }
+}
+@media only screen and (max-width: 700px) {
+    #hero #hero-text{
+        align-items: center !important;
+        width: 100% !important;
+        text-align: center !important;
+    }
+    #hero #logo-hero{
+        justify-content: center !important;
+        width: 100% !important;
+    }
+    #none{
+        display: none !important;
+    }
+}
